@@ -4,7 +4,7 @@ Easiest installation/config:
 
 Copy/paste this into your 'init.lua' after you 'require.setup()' your installed themes:
 
-```
+```lua
 vim.keymap.set("n", "<leader>t", function() -- <leader>t is just my preferential binding for this, you can replace with whatever you'd like
     local selected_theme = vim.fn.input("colorscheme(rose-pine, tokyonight, gruvbox, terafox, carbonfox, nightfox): ")
     vim.cmd("colorscheme " .. selected_theme)
